@@ -1,8 +1,8 @@
 {
-	"name": "@sushiswap/sushi-data",
+	"name": "@mistswapdex/mist-data",
 	"license": "MIT",
 	"version": "1.0.26",
-	"author": "SushiSwap",
+	"author": "MISTswap",
 	"main": "index",
 	"scripts": {
 		"lint": "eslint .",
