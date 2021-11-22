@@ -22,8 +22,8 @@ const MASTER_CONTRACT = '0x2cba6ab6574646badc84f0544d05059e57a5dc42'
 
 module.exports = {
   async clones({ masterAddress = undefined, chainId = undefined } = {}) {
-    if(!masterAddress) { throw new Error("sushi-data: Master Address undefined"); }
-    if(!chainId) { throw new Error("sushi-data: Chain Id undefined"); }
+    if(!masterAddress) { throw new Error("mist-data: Master Address undefined"); }
+    if(!chainId) { throw new Error("mist-data: Chain Id undefined"); }
 
     return pageResults({
       api: ENDPOINTS[chainId],

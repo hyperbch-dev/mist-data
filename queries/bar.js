@@ -47,7 +47,7 @@ module.exports = {
     },
 
     async user({block = undefined, timestamp = undefined, user_address = undefined} = {}) {
-        if(!user_address) { throw new Error("sushi-data: User address undefined"); }
+        if(!user_address) { throw new Error("mist-data: User address undefined"); }
 
         block = block ? block : timestamp ? (await timestampToBlock(timestamp)) : undefined;
         block = block ? `block: { number: ${block} }` : "";

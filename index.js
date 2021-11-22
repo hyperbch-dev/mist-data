@@ -35,8 +35,8 @@ module.exports = {
 	bentobox,
 	utils,
 	async timeseries({blocks = undefined, timestamps = undefined, target = undefined} = {}, targetArguments) {
-		if(!target) { throw new Error("sushi-data: Target function undefined"); }
-		if(!blocks && !timestamps) { throw new Error("sushi-data: Timeframe undefined"); }
+		if(!target) { throw new Error("mist-data: Target function undefined"); }
+		if(!blocks && !timestamps) { throw new Error("mist-data: Timeframe undefined"); }
 
 		if(blocks) {
 			return Promise.map(blocks, async (block) => ({

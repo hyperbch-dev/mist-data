@@ -1,26 +1,26 @@
 module.exports = {
     graphAPIEndpoints: {
-        masterchef: 'https://api.thegraph.com/subgraphs/name/sushiswap/master-chef',
-        bar: 'https://api.thegraph.com/subgraphs/name/sushiswap/sushi-bar',
-        timelock: 'https://api.thegraph.com/subgraphs/name/sushiswap/sushi-timelock',
-        maker: 'https://api.thegraph.com/subgraphs/name/sushiswap/sushi-maker',
-        exchange: 'https://api.thegraph.com/subgraphs/name/sushiswap/exchange',
-        exchange_v1: 'https://api.thegraph.com/subgraphs/name/jiro-ono/sushiswap-v1-exchange',
-        blocklytics: 'https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks',
-        lockup: 'https://api.thegraph.com/subgraphs/name/matthewlilley/lockup',
+        masterchef: 'https://thegraph.mistswap.fi/subgraphs/name/mistswap/master-chef',
+        bar: 'https://thegraph.mistswap.fi/subgraphs/name/mistswap/bar',
+        // timelock: 'https://thegraph.mistswap.fi/subgraphs/name/mistswap/sushi-timelock',
+        // maker: 'https://thegraph.mistswap.fi/subgraphs/name/mistswap/sushi-maker',
+        exchange: 'https://thegraph.mistswap.fi/subgraphs/name/mistswap/exchange',
+        // exchange_v1: 'https://thegraph.mistswap.fi/subgraphs/name/jiro-ono/mistswap-v1-exchange',
+        blocklytics: 'https://thegraph.mistswap.fi/subgraphs/name/blocklytics/ethereum-blocks',
+        // lockup: 'https://thegraph.mistswap.fi/subgraphs/name/matthewlilley/lockup',
     },
 
     graphWSEndpoints: {
-        bar: 'wss://api.thegraph.com/subgraphs/name/sushiswap/sushi-bar',
-        exchange: 'wss://api.thegraph.com/subgraphs/name/sushiswap/exchange',
-        blocklytics: 'wss://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks'
+        bar: 'wss://thegraph.mistswap.fi/subgraphs/name/mistswap/bar',
+        exchange: 'wss://thegraph.mistswap.fi/subgraphs/name/mistswap/exchange',
+        blocklytics: 'wss://thegraph.mistswap.fi/subgraphs/name/blocklytics/ethereum-blocks'
     },
 
-    barAddress: "0x8798249c2e607446efb7ad49ec89dd1865ff4272",
-    makerAddress: "0xe11fc0b43ab98eb91e9836129d1ee7c3bc95df50",
-    chefAddress: "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-    sushiAddress: "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
-    factoryAddress: "0xc0aee478e3658e2610c5f7a4a2e1777ce9e4f2ac",
+    barAddress: "0xc41c680c60309d4646379ed62020c534eb67b6f4",
+    makerAddress: "0x7d1d91e59d1da60e3ecc5701a4bc669ab182dae8",
+    chefAddress: "0x3a7b9d0ed49a90712da4e087b17ee4ac1375a5d4",
+    sushiAddress: "0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129",
+    factoryAddress: "0x6008247f53395e7be698249770aa1d2bfe265ca0",
 
     TWENTY_FOUR_HOURS: 86400,
 }

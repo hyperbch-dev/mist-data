@@ -25,7 +25,7 @@ module.exports = {
     },
 
     async pool({block = undefined, timestamp = undefined, pool_id = undefined, pool_address = undefined} = {}) {
-        if(!pool_id && !pool_address) { throw new Error("sushi-data: Pool ID / Address undefined"); }
+        if(!pool_id && !pool_address) { throw new Error("mist-data: Pool ID / Address undefined"); }
 
         block = block ? block : timestamp ? (await timestampToBlock(timestamp)) : undefined;
         block = block ? `block: { number: ${block} }` : "";
@@ -70,7 +70,7 @@ module.exports = {
     },
 
     async stakedValue({block = undefined, timestamp = undefined, token_address = undefined} = {}) {
-        if(!token_address) { throw new Error("sushi-data: Token address undefined"); }
+        if(!token_address) { throw new Error("mist-data: Token address undefined"); }
 
         block = block ? block : timestamp ? (await timestampToBlock(timestamp)) : undefined;
         block = block ? `block: { number: ${block} }` : "";
@@ -87,7 +87,7 @@ module.exports = {
     },
 
     async user({block = undefined, timestamp = undefined, user_address = undefined} = {}) {
-        if(!user_address) { throw new Error("sushi-data: User address undefined"); }
+        if(!user_address) { throw new Error("mist-data: User address undefined"); }
 
         return pageResults({
             api: graphAPIEndpoints.masterchef,
